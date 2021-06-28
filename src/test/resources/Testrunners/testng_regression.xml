@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="TestNG Sessions Suite" thread-count="2" parallel="tests" verbose="4" >
+  
+  
+  <test name="AmazonTest">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.amazon.in"/>    
+	  <classes>
+	    <class name="TestNGSessions.AmazonTest" />
+      </classes>
+  </test>
+  
+  
+  <test name="OrangeHRMTest">
+      <parameter name="browser" value="chrome"/>
+      <parameter name="url" value="https://www.orangehrm.com/orangehrm-30-day-trial"/>      
+      	<classes>
+	      <class name="TestNGSessions.OrangeHRMTest" />
+        </classes>
+  </test>
+  
+  <test name="ParellelExecutionAssignment">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://classic.crmpro.com/index.html"/>
+    <parameter name="username" value="groupautomation"/>
+    <parameter name="password" value="Test@12345"/>        
+	  <classes>
+	    <class name="TestNGSessions.ParellelExecutionAssignment" />
+      </classes>
+  </test>
+  
+  
+</suite>
