@@ -7,6 +7,7 @@ public class PaymentPage {
     }
   
   public void paymenttype() {
+	  System.out.println("BANK");
 	  System.out.println("diff payment types");
   }
 
